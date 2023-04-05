@@ -20,7 +20,6 @@ This is a solution to the [Huddle landing page with single introductory section 
 ### Screenshot
 - Desktop version (1440px) and Mobile version (375px)
 ![](img/desktop_finished.png)
-
 ![](img/mobile_finished.png)
 
 ### Links
