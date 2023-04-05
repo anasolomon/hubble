@@ -66,7 +66,7 @@ The mobile social media icons (social-imgs) were still using the "position"'s pr
   }
 }
 ```
-I thought that maybe all I had to do was specify in the mobile version that I want the "social-imgs" (the social media icons) to be position relative  
+I thought that maybe all I had to do was specify in the mobile version that I want the "social-imgs" (social media icons) to be position relative  
 That did not work, so I tried my best to find the closest coordinates using margin values to recreate my previous position
 ```css
 @media (max-width:375px) {
