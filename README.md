@@ -66,7 +66,7 @@ The mobile social media icons (social-imgs) were still using the "position"'s pr
   }
 }
 ```
-I thought that maybe all I had to do was specify in the mobile version that I want the "social-imgs" to be position relative  
+I thought that maybe all I had to do was specify in the mobile version that I want the "social-imgs" (the social media icons) to be position relative  
 That did not work, so I tried my best to find the closest coordinates using margin values to recreate my previous position
 ```css
 @media (max-width:375px) {
@@ -78,7 +78,7 @@ That did not work, so I tried my best to find the closest coordinates using marg
 ```
 If anybody has suggestions on how I could of solved this better please message me or if you can tell me why putting position absolute did not work for the mobile version please let me know.
 
-Also, in the body I used an svg file as the background image, which is something I've never done before. After learning about svg I think they are the best in terms of file size, resolution quality and responsivness.
+Also, in the body I used an svg file as the background image, which is something I've never done before. After learning about svgs I think they are the best in terms of file size, resolution quality and responsivness.
 
 
 ### Continued development
