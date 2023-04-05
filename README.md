@@ -57,7 +57,7 @@ to
 ```
 which fixed the issue for the social media icons not being static while every other element on the page was (on the desktop version)  
 But this completely messed up the mobile version putting the icons miles away from their original coordinates due to the margins being too long for the 375px version  
-The mobile social media icons (social-imgs) were still using position property's values
+The mobile social media icons (social-imgs) were still using the "position"'s property values
 ```css
 @media (max-width:375px) {
 .social-imgs{
