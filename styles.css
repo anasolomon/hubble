@@ -1,0 +1,149 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-image: url("img/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 1300px 800px;
+  background-color: hsl(257, 40%, 49%);
+  margin: 0;
+  text-align: left;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400px;
+}
+.logo{
+  width: 15%;
+}
+.logoimg {
+  margin-top: 55px;
+  margin-left: 75px;
+}
+
+.imgdiv {
+  position: absolute;
+  top: 195px;
+  left: 75px;
+}
+
+.imgmockups {
+  float: left;
+  margin: 0 50px 0 0;
+}
+
+.btn {
+  border-radius: 28px;
+  box-shadow: 7px 7px 7px #18161b95;
+  color: hsl(257, 40%, 49%);
+  font-size: 19px;
+  background: #ffffff;
+  padding: 15px 38px;
+  text-decoration: none;
+  border: none;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: hsl(300, 69%, 71%);
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+p {
+  width: auto;
+  margin-top: 3px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 40px;
+}
+
+.social-imgs {
+  margin-top: 610px;
+  margin-left: 1200px;
+  height: 60px;
+  width: 200px;
+}
+
+.cont-pic {
+  display: inline-block;
+  text-align: center;
+  width: 38px;
+  height: 38px;
+  border: 2px solid white;
+  border-radius: 50%;
+  border-width: thin;
+  margin: auto 5px;
+}
+
+.media {
+  font-size: 1.2rem;
+  padding-top: 9px;
+}
+.cont-pic:hover{
+  color: hsl(300, 69%, 71%);
+  border-color:  hsl(300, 69%, 71%);
+  cursor: pointer;
+}
+
+@media (max-width:375px) {
+  body{
+    background-image: url("img/bg-mobile.svg");
+    background-size: 375px;
+    background-position:top; 
+  }
+  .logoimg{
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+  .logo{
+    width: 39%;
+  }
+  .imgdiv{
+    top:123px;
+    left: 40px;
+    width: 300px;
+  }
+  .imgmockups{
+    width: 300px;
+  }
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 280px;
+  }
+  p{
+    text-align: center;
+  }
+  .btn{
+    font-size: 0.8rem;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 15px;
+  }
+  .social-imgs{ 
+    margin-top: 665px;
+    margin-left: 125px;
+  }
+  .cont-pic{
+    width: 26px;
+    height: 26px;
+    padding: 0px;
+    margin: 4px;
+  }
+  .media{
+    font-size: 0.8rem;
+    padding-top: 9px;
+  }
+}
+
