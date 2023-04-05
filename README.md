@@ -18,73 +18,81 @@ This is a solution to the [Huddle landing page with single introductory section 
 ## Overview
 
 ### Screenshot
-- Desktop version (1440px)
+- Desktop version (1440px) and Mobile version (375px)
 ![](img/desktop_finished.png)
-- Mobile version (375px)
+
 ![](img/mobile_finished.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/anasolomon/hubble)
+- [Live Site URL](https://anasolomon.github.io/hubble/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- My poor little fingers
+- Core html & css rules to build a pixel perfect website that does not deviate from the picture
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+That position absolute is not optimal to use for the same page that needs optimization on two different resolution canvases.
 
-To see how you can add code snippets, see below:
+To solve this problem I had to go from
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.social-imgs {
+  position: absolute;
+  right: 35px;
+  bottom: 15px;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+to
+```css
+.social-imgs {
+  margin-top: 610px;
+  margin-left: 1200px;
 }
 ```
+which fixed the issue for the social media icons not being static while every other element on the page was (on the desktop version)
+But this completely messed up the mobile version putting the icons miles away from their original coordinates due to the margins being too long for 375px
+The mobile social media icons (social-imgs) were still using position property's values
+```css
+@media (max-width:375px) {
+.social-imgs{
+  top: 720px;
+  left: 120px;
+  }
+}
+```
+I thought that maybe all I had to do was specify in the mobile version that I was the "social-imgs" to be position: relative;
+That did not work, so I tried my best to find the closest coordinates using margin values to recreate my previous position
+```css
+@media (max-width:375px) {
+.social-imgs{ 
+    margin-top: 665px;
+    margin-left: 125px;
+  }
+}
+```
+If anybody has suggestions on how I could of solved this better please message me or if you can tell me why putting position absolute did not work for the mobile version please let me know.
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Also, in the body I used an svg file as the background image, which is something I've never done before. After learning about svg I think they are the best in terms of file size, resolution quality and responsivness.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I want to learn more about website responsivness. This challenge asked specifically for a 1440px width but as I resized the web page it looked really bad since everything was static in it's place. I had to use pixels to achieve this and percentages are my best known way to make websites responsive to different screens as they take an amount that is calculated depending on the individual user's resolution.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [w3schools](https://www.w3schools.com/cssref/pr_background-position.php) - This helped me understand how to move a background image in the body. Very simple.
+- [w3schools](https://www.w3schools.com/cssref/tryit.php?filename=trycss3_background-size) - This helped me understand how to resize a body's background image.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Github - [anasolomon](https://github.com/anasolomon)
+- Frontend Mentor - [@anasolomon](https://www.frontendmentor.io/profile/anasolomon)
 
