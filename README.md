@@ -83,7 +83,8 @@ Also, in the body I used an svg file as the background image, which is something
 
 ### Continued development
 
-I want to learn more about website responsivness. This challenge asked specifically for a 1440px width but as I resized the web page it looked really bad since everything was static. I had to use pixels to achieve this and percentages are my best known way to make websites responsive to different screens as they take an amount that is calculated depending on the individual user's resolution.
+I want to learn more about website responsivness. This challenge asked specifically for a 1440px width but as I resized the web page it looked really bad since everything was static. I had to use pixels to achieve this amount of precision for the website to look exactly as the picture when it's in 1440px width or 375px   
+Also, percentages are my best known way at the moment to make websites responsive to different screens as they take an amount that is calculated depending on the individual user's resolution.
 
 ### Useful resources
 
